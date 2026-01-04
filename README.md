@@ -1,62 +1,109 @@
-# 🍪 Cookie Manager Pro
+# 🍪 Cookie Manager Pro v2.0
 
 [![GitHub](https://img.shields.io/badge/GitHub-GAMAKADEV-blue?logo=github)](https://github.com/GAMAKADEV/cookie-manager-pro)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Firefox](https://img.shields.io/badge/Firefox-140%2B-orange?logo=firefox)](https://addons.mozilla.org)
 
-Export and import your browser cookies easily and securely.
+The most complete cookie manager for Firefox! Export, import, view, edit and manage all your browser cookies with military-grade encryption.
 
-## Features
+## ✨ Features
 
-- **Export Cookies** - Export all cookies or filter by domain
-- **Import Cookies** - Drag & drop or click to select file
-- **AES-256 Encryption** - Secure your exported cookies with a password
-- **Light/Dark Theme** - Toggle between themes
-- **Sidebar Interface** - Clean, easy-to-use panel
+### 🍪 Cookies Tab
+- View all cookies with search & filter
+- Edit cookie values, path, expiration
+- Delete individual or bulk cookies
+- Tracker detection badges (Secure, HttpOnly, Tracker)
 
-## Security
+### 📤 Export Tab
+- Export all cookies or filter by domain
+- **JSON format** (Cookie Manager compatible)
+- **Netscape format** (cookies.txt - universal)
+- Exclude known trackers automatically
+- **AES-256-GCM encryption** with password
 
-- **AES-256-GCM** encryption
-- **PBKDF2** key derivation with 100,000 iterations
+### 📥 Import Tab
+- Drag & drop or click to select
+- Supports JSON and Netscape formats
+- Preview cookies before importing
+- Overwrite or merge options
+
+### 💾 Profiles Tab
+- Save cookie snapshots as profiles
+- Load profiles instantly
+- Download profiles as files
+- **Auto-backup** (hourly, daily, weekly)
+
+### ⚙️ Settings
+- **Multi-language**: English, Français, Español
+- Customizable tracker blocklist
+- Light/Dark theme toggle
+- **Keyboard shortcuts**:
+  - `Ctrl+Shift+E` - Quick export
+  - `Ctrl+Shift+I` - Open sidebar
+
+## 🔐 Security
+
+- **AES-256-GCM** military-grade encryption
+- **PBKDF2** key derivation (100,000 iterations)
 - Random salt and IV for each encryption
-- All data stays local - nothing sent to external servers
+- 100% offline - no data sent anywhere
+- Open source - fully auditable code
 
-## Permissions
+## 📱 Permissions
 
 | Permission | Purpose |
-|------------|---------|
+|------------|--------|
 | `cookies` | Read and write browser cookies |
-| `storage` | Save theme preferences |
+| `storage` | Save settings and profiles |
 | `<all_urls>` | Access cookies from all websites |
 
-## Usage
+## 🚀 Installation
 
-1. Click the extension icon → sidebar opens
-2. **Export Tab**: Select filters, optionally enable encryption, click Export
-3. **Import Tab**: Drag & drop a file or click to browse
+### From Firefox Add-ons
+1. Visit [addons.mozilla.org](https://addons.mozilla.org)
+2. Search "Cookie Manager Pro"
+3. Click "Add to Firefox"
 
-## Privacy Policy
+### Manual Installation
+1. Download the latest release
+2. Go to `about:debugging` in Firefox
+3. Click "Load Temporary Add-on"
+4. Select `manifest.json`
+
+## 📖 Usage
+
+1. Click extension icon → sidebar opens
+2. **Cookies**: Browse, search, edit, delete
+3. **Export**: Choose format, filters, encryption
+4. **Import**: Drop file or click to browse
+5. **Profiles**: Save/load cookie snapshots
+
+## 🔑 Privacy Policy
 
 This extension:
-- Does NOT collect any personal data
-- Does NOT send any data to external servers
-- Stores preferences locally only
-- Encrypted files can only be decrypted with your password
+- ✅ Works 100% offline
+- ✅ Stores all data locally
+- ❌ Does NOT collect any data
+- ❌ Does NOT send anything to servers
+- ❌ Does NOT track users
 
-## Contributing
+## 🤝 Contributing
 
-Contributions are welcome! Feel free to:
-- Open issues for bugs or feature requests
-- Submit pull requests
-- Star the repo if you find it useful ⭐
+Contributions welcome!
+- ⭐ Star the repo
+- 🐛 Report bugs
+- 💡 Suggest features
+- 🔧 Submit pull requests
 
-## Links
+## 📎 Links
 
 - **GitHub**: [github.com/GAMAKADEV/cookie-manager-pro](https://github.com/GAMAKADEV/cookie-manager-pro)
 - **Author**: [@GAMAKADEV](https://github.com/GAMAKADEV)
+- **Firefox Add-ons**: Coming soon!
 
-## License
+## 📄 License
 
-MIT License - Free to use and modify.
+MIT License - Free to use, modify and distribute.
 
 ---
 
