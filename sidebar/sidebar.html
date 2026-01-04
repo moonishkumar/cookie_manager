@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Manager</title>
+  <link rel="stylesheet" href="sidebar.css">
+</head>
+<body class="dark">
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <circle cx="8" cy="9" r="1.5" fill="currentColor"/>
+          <circle cx="15" cy="8" r="1" fill="currentColor"/>
+          <circle cx="10" cy="14" r="1" fill="currentColor"/>
+          <circle cx="16" cy="14" r="1.5" fill="currentColor"/>
+        </svg>
+        <h1>Cookie Manager</h1>
+      </div>
+      <button class="icon-btn" id="themeToggle" title="Toggle theme">
+        <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"/>
+          <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+        <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </header>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab active" data-tab="export">Export</button>
+      <button class="tab" data-tab="import">Import</button>
+    </div>
+
+    <!-- Messages -->
+    <div class="message" id="message"></div>
+
+    <!-- Export Tab -->
+    <div class="tab-content active" id="export-tab">
+      <!-- Encryption -->
+      <section class="card">
+        <h2>Security</h2>
+        <div class="toggle-row">
+          <label class="toggle">
+            <input type="checkbox" id="encryptExport">
+            <span class="slider"></span>
+          </label>
+          <span>AES-256 Encryption</span>
+        </div>
+        <input type="password" id="exportPassword" class="input" placeholder="Password (min 4 chars)" style="display:none;">
+      </section>
+
+      <!-- Filters -->
+      <section class="card">
+        <h2>Filter</h2>
+        <label class="checkbox-row">
+          <input type="checkbox" id="filterCurrentSite">
+          <span class="check"></span>
+          Current site only
+        </label>
+        <input type="text" id="currentDomain" class="input" readonly style="display:none;">
+        
+        <label class="checkbox-row">
+          <input type="checkbox" id="filterCustomDomain">
+          <span class="check"></span>
+          Custom domain
+        </label>
+        <input type="text" id="customDomain" class="input" placeholder="example.com" style="display:none;">
+      </section>
+
+      <!-- Stats -->
+      <section class="stats">
+        <div class="stat">
+          <span class="stat-num" id="totalCookies">0</span>
+          <span class="stat-label">Total</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" id="selectedCookies">0</span>
+          <span class="stat-label">Selected</span>
+        </div>
+      </section>
+
+      <!-- Export Button -->
+      <button class="btn btn-primary" id="exportBtn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7,10 12,15 17,10"/>
+          <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        Export Cookies
+      </button>
+    </div>
+
+    <!-- Import Tab -->
+    <div class="tab-content" id="import-tab">
+      <!-- Encryption -->
+      <section class="card">
+        <h2>Encrypted file?</h2>
+        <div class="toggle-row">
+          <label class="toggle">
+            <input type="checkbox" id="encryptImport">
+            <span class="slider"></span>
+          </label>
+          <span>File is encrypted</span>
+        </div>
+        <input type="password" id="importPassword" class="input" placeholder="Decryption password" style="display:none;">
+      </section>
+
+      <!-- Dropzone -->
+      <section class="card dropzone" id="dropzone">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="17,8 12,3 7,8"/>
+          <line x1="12" y1="3" x2="12" y2="15"/>
+        </svg>
+        <p>Drop file here</p>
+        <span>or click to select</span>
+        <input type="file" id="fileInput" accept=".json,.cookiejar">
+      </section>
+
+      <!-- Loading -->
+      <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Importing...</p>
+      </div>
+
+      <!-- Import Stats -->
+      <section class="stats" id="importStats" style="display:none;">
+        <div class="stat">
+          <span class="stat-num success" id="importedCount">0</span>
+          <span class="stat-label">Imported</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num failed" id="failedCount">0</span>
+          <span class="stat-label">Failed</span>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>Secure & Local</p>
+    </footer>
+  </div>
+
+  <script src="sidebar.js"></script>
+</body>
+</html>
